@@ -34,3 +34,8 @@ sslServer.listen(3443, () => console.log('Secure server on port 3443'))
 - When running the app, the error `javax.net.ssl.SSLHandshakeException: java.security.cert.CertPathValidatorException: Trust anchor for certification path not found.` is encountered.
 - If remote config is called before the SSL is set, the issue is not encountered. This seems like a race condition.
 - Not using the `allowSSL()` method will allow the app to work properly.
+
+
+### P.S.
+- To check if `mkcert` is working in NodeJS, simply open browser and type `https://localhost:3443`
+- This does not work in emulators, since emulator IP address default is `10.0.2.2`, so the code uses that when calling the server. (e.g. `https://10.0.2.2:3443`)
