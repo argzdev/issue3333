@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<defaultsMap>
+    <entry>
+        <key>random_value</key>
+        <value>this is default value from local</value>
+    </entry>
+</defaultsMap>
